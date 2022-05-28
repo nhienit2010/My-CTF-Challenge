@@ -34,7 +34,7 @@ Name | Category | Summary | Idea
 --- | --- | --- | --- |
 [Client-side check](https://github.com/nhienit2010/My-CTF-Challenge/tree/main/KCSC-CTF-2022/Client-side%20check) | Web | Warm Up | Encrypt, Brute-force
 [Request as a service](https://github.com/nhienit2010/My-CTF-Challenge/tree/main/KCSC-CTF-2022/Request%20as%20a%20service) | Web | Easy | SSRF, Gopher 
-[Leak me if you can](https://github.com/nhienit2010/My-CTF-Challenge/tree/main/Meetup%202020/chall3](https://github.com/nhienit2010/My-CTF-Challenge/tree/main/KCSC-CTF-2022/Leak%20me%20if%20you%20can/chall) | Web | Medium | XS-Leak
+[Leak me if you can](https://github.com/nhienit2010/My-CTF-Challenge/tree/main/KCSC-CTF-2022/Leak%20me%20if%20you%20can/chall) | Web | Medium | XS-Leak
 [Create note as a service](https://github.com/nhienit2010/My-CTF-Challenge/tree/main/KCSC-CTF-2022/Create%20note%20as%20a%20service/chall) | Web | Medium | Regex injection, Time based  
 
 > Updating...
