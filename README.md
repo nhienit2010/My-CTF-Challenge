@@ -1,9 +1,9 @@
 # **My CTF Challenge**
 <hr />
 
-Some challenges that I created for some events.  
+:checkered_flag: Some challenges that I created for some events.  
   
-## **KMA Meetup - 2020**
+## **KMA Meetup - 2020 :yum:**
 <hr />
 
 Name | Category | Level | Idea
@@ -13,21 +13,21 @@ Name | Category | Level | Idea
 [chall 3](https://github.com/nhienit2010/My-CTF-Challenge/tree/main/Meetup%202020/chall3) | Web | Warm Up | Cookie broken access control
 [chall 4](https://github.com/nhienit2010/My-CTF-Challenge/tree/main/Meetup%202020/chall4) | Web | Easy | Javascript obfuscate  
 
-## **KCSC Birthday - 2021**
+## **KCSC Birthday - 2021 :birthday:**
 <hr />
 
 Name | Category | Level | Idea
 --- | --- | --- | --- |
 [happy_birthday_KCSC](https://github.com/nhienit2010/My-CTF-Challenge/tree/main/KCSC%20Birthday%202021/happy_birthday_KCSC) | Web | Medium | SSRF -> SQL Injection -> PHP Unserialize  
 
-## **KCSC Recruit - 2022**
+## **KCSC Recruit - 2022 :v:**
 <hr />
 
 Name | Category | Level | Idea
 --- | --- | --- | --- |
 [EnCryptBoizzz](https://github.com/nhienit2010/My-CTF-Challenge/tree/main/KCSC%20Recruit/EnCryptBoizzz) | Web, Crypto | Medium | AES ECB -> Command Injection
 
-## **KCSC CTF - 2022**
+## **KCSC CTF - 2022 :golf:**
 <hr />
 
 Name | Category | Level | Idea
