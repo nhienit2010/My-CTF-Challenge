@@ -1,0 +1,25 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-image: url("images/cybersecvn.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 1928px 1600px;
+	margin-top: 150px;
+}
+#content {
+	position: absolute;
+	color: white;
+	margin: 100px 100px;
+	font-size: 24px;
+}
+#content h1 {
+	margin-top: 120px;
+	color: orange;
+	font-weight: bold;
+}
+
+/*Part 2/3:	cSs_*/

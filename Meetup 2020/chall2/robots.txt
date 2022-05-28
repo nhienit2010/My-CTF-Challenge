@@ -1,0 +1,2 @@
+User-agent: *
+Disalllow: /s3cr3t_fl4g.txt
