@@ -1,0 +1,25 @@
+<div id="notes">
+
+</div>
+
+<script>
+    fetch("/api/notes")
+    .then(r => r.text())
+    .then(d => {
+	let data = JSON.parse(d)
+	for (let i=0; i<data.length; ++i) {
+        	let div = document.createElement("div");
+		div.setAttribute("name", "note");
+		
+		let note = document.createElement("p");
+		note.appendChild(document.createTextNode(data[i].note));
+		div.appendChild(note);
+
+		let author = document.createElement("strong");
+		author.appendChild(document.createTextNode(data[i].author));
+		div.appendChild(author);
+
+		document.getElementById("notes").appendChild(div);
+	}
+    })
+</script>
