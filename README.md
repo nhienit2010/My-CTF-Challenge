@@ -18,7 +18,7 @@ Name | Category | Summary | Idea
 
 Name | Category | Summary | Idea
 --- | --- | --- | --- |
-[happy_birthday_KCSC](https://github.com/nhienit2010/My-CTF-Challenge/tree/main/Meetup%202020/chall1](https://github.com/nhienit2010/My-CTF-Challenge/tree/main/KCSC%20Birthday%202021/happy_birthday_KCSC) | Web | Medium | SSRF -> SQL Injection -> PHP Unserialize  
+[happy_birthday_KCSC](https://github.com/nhienit2010/My-CTF-Challenge/tree/main/KCSC%20Birthday%202021/happy_birthday_KCSC) | Web | Medium | SSRF -> SQL Injection -> PHP Unserialize  
 
 ## **KCSC Recruit - 2022**
 <hr />
