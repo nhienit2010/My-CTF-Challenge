@@ -6,7 +6,7 @@ Some challenges that I created for some events.
 ## **KMA Meetup - 2020**
 <hr />
 
-Name | Category | Summary | Idea
+Name | Category | Level | Idea
 --- | --- | --- | --- |
 [chall 1](https://github.com/nhienit2010/My-CTF-Challenge/tree/main/Meetup%202020/chall1) | Web | Sanity Check | View source
 [chall 2](https://github.com/nhienit2010/My-CTF-Challenge/tree/main/Meetup%202020/chall2) | Web | Warmp Up | Check robots.txt 
@@ -16,21 +16,21 @@ Name | Category | Summary | Idea
 ## **KCSC Birthday - 2021**
 <hr />
 
-Name | Category | Summary | Idea
+Name | Category | Level | Idea
 --- | --- | --- | --- |
 [happy_birthday_KCSC](https://github.com/nhienit2010/My-CTF-Challenge/tree/main/KCSC%20Birthday%202021/happy_birthday_KCSC) | Web | Medium | SSRF -> SQL Injection -> PHP Unserialize  
 
 ## **KCSC Recruit - 2022**
 <hr />
 
-Name | Category | Summary | Idea
+Name | Category | Level | Idea
 --- | --- | --- | --- |
 [EnCryptBoizzz](https://github.com/nhienit2010/My-CTF-Challenge/tree/main/KCSC%20Recruit/EnCryptBoizzz) | Web, Crypto | Medium | AES ECB -> Command Injection
 
 ## **KCSC CTF - 2022**
 <hr />
 
-Name | Category | Summary | Idea
+Name | Category | Level | Idea
 --- | --- | --- | --- |
 [Client-side check](https://github.com/nhienit2010/My-CTF-Challenge/tree/main/KCSC-CTF-2022/Client-side%20check) | Web | Warm Up | Encrypt, Brute-force
 [Request as a service](https://github.com/nhienit2010/My-CTF-Challenge/tree/main/KCSC-CTF-2022/Request%20as%20a%20service) | Web | Easy | SSRF, Gopher 
