@@ -42,8 +42,8 @@ Name | Category | Level | Idea
 
 Name | Category | Level | Idea
 --- | --- | --- | --- |
-[inject me](https://github.com/nhienit2010/My-CTF-Challenge/tree/main/KCSC-CTF-2022/Client-side%20check](https://github.com/nhienit2010/My-CTF-Challenge/tree/main/KMACTF%202022%20-%202nd/inject%20me) | Web | Medium | SQL injection
-[pwn me](https://github.com/nhienit2010/My-CTF-Challenge/tree/main/KCSC-CTF-2022/Request%20as%20a%20service](https://github.com/nhienit2010/My-CTF-Challenge/tree/main/KMACTF%202022%20-%202nd/pwn%20me) | Web | Medium | LD_PRELOAD, RCE    
+[inject me](https://github.com/nhienit2010/My-CTF-Challenge/tree/main/KMACTF%202022%20-%202nd/inject%20me) | Web | Medium | SQL injection
+[pwn me](https://github.com/nhienit2010/My-CTF-Challenge/tree/main/KMACTF%202022%20-%202nd/pwn%20me) | Web | Medium | LD_PRELOAD, RCE    
   
   
 > Updating...
