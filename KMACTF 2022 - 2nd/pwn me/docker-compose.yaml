@@ -1,0 +1,13 @@
+version: "3.0"
+services:
+  challenge:
+    network_mode: "default"
+    container_name: pwnme
+    build: .
+    restart: always
+    ports:
+      - 20102:80"
+networks:
+  default:
+    external: true
+    name: none

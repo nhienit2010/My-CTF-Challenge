@@ -1,0 +1,16 @@
+version: '3.3'
+services:
+  web:
+    build: .
+    volumes:
+      - ./src:/app
+    ports:
+      - 20103:80
+    networks:
+      - private
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+networks:
+  private:
+    external: false

