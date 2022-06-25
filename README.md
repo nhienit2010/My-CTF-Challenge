@@ -36,5 +36,14 @@ Name | Category | Level | Idea
 [Request as a service](https://github.com/nhienit2010/My-CTF-Challenge/tree/main/KCSC-CTF-2022/Request%20as%20a%20service) | Web | Easy | SSRF, Gopher 
 [Leak me if you can](https://github.com/nhienit2010/My-CTF-Challenge/tree/main/KCSC-CTF-2022/Leak%20me%20if%20you%20can/chall) | Web | Medium | XS-Leak
 [Create note as a service](https://github.com/nhienit2010/My-CTF-Challenge/tree/main/KCSC-CTF-2022/Create%20note%20as%20a%20service/chall) | Web | Medium | Regex injection, Time based  
+  
+## **KMACTF 2022 - 2nd :golf:**
+<hr />
 
+Name | Category | Level | Idea
+--- | --- | --- | --- |
+[inject me]([https://github.com/nhienit2010/My-CTF-Challenge/tree/main/KCSC-CTF-2022/Client-side%20check](https://github.com/nhienit2010/My-CTF-Challenge/tree/main/KMACTF%202022%20-%202nd/inject%20me)) | Web | Medium | SQL injection
+[pwn me]([https://github.com/nhienit2010/My-CTF-Challenge/tree/main/KCSC-CTF-2022/Request%20as%20a%20service](https://github.com/nhienit2010/My-CTF-Challenge/tree/main/KMACTF%202022%20-%202nd/pwn%20me)) | Web | Medium | LD_PRELOAD, RCE    
+  
+  
 > Updating...
