@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta
+  http-equiv="Content-Security-Policy" content="
+    default-src 'self'; connect-src 'self' https://*; 
+    script-src 'unsafe-eval' 'self' https://www.gstatic.com/ https://www.google.com/ https://cdnjs.cloudflare.com/ajax/libs/dompurify/; 
+    style-src 'self' 'unsafe-inline'; 
+    frame-src https://www.google.com/ https://recaptcha.google.com/;
+  ">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <link rel="stylesheet" href="css/style.css" crossorigin="anonymous">
+  <script src="js/app.js" async defer></script>
+  <title>XSS</title>
+</head>
+<body>
+
+<div id="my_form">
+  <%- name %>
+  <h1>Your name?</h1>
+  <form method="GET" action="/">
+    <input type="text" name="name" />
+  </form>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+version: "3.0"
+services:
+  challenge:
+    network_mode: "bridge"
+    container_name: your_name
+    build: .
+    restart: always
+    ports:
+      - "20109:13337"

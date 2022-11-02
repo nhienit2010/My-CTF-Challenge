@@ -1,0 +1,17 @@
+body {
+  background: url('../images/your-name.jpeg');
+  background-size: cover;
+}
+
+#my_form {
+  width: 25%;
+  height: 25%;
+  background-color: white;
+  position: absolute;
+  margin: auto;
+  transform: translate(150%, 150%);
+  border-radius: 2em;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+}
