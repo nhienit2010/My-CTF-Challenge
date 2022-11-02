@@ -52,7 +52,7 @@ Name | Category | Level | Idea
 Name | Category | Level | Idea
 --- | --- | --- | --- |
 [Yugioh Shop](https://github.com/nhienit2010/My-CTF-Challenge/tree/main/KMACTF%202022%20-%203rd/Yugioh%20Shop) | Web | Medium | XXE, Phar unserialize
-[Your name](https://github.com/nhienit2010/My-CTF-Challenge/tree/main/KMACTF%202022%20-%203rd/Yugioh%20Shop) | Web | Medium,Hard | XSS, Recaptcha, DOM Clobbering
+[Your name](https://github.com/nhienit2010/My-CTF-Challenge/tree/main/KMACTF%202022%20-%203rd/Your%20Name) | Web | Medium,Hard | XSS, Recaptcha, DOM Clobbering
   
     
 > Updating...
