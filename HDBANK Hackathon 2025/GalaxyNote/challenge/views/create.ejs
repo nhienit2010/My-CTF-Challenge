@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Note</title>
+  <style>
+    body {
+      background: #f5f7fa;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 500px;
+      margin: 48px auto 0 auto;
+      padding: 32px 36px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(33,150,243,0.08);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 24px;
+      color: #2196f3;
+    }
+    form label {
+      display: block;
+      margin-bottom: 10px;
+      color: #1769aa;
+      font-weight: bold;
+    }
+    input[type="text"], textarea {
+      width: 100%;
+      padding: 10px 12px;
+      margin-bottom: 18px;
+      border: 1px solid #b3c6e0;
+      border-radius: 6px;
+      font-size: 16px;
+      background: #f7fbff;
+      resize: vertical;
+    }
+    textarea {
+      min-height: 80px;
+      max-height: 200px;
+    }
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 10px 0;
+      background: #2196f3;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .btn:hover {
+      background: #1769aa;
+    }
+    .back-link {
+      display: block;
+      margin: 18px auto 0 auto;
+      width: fit-content;
+      color: #2196f3;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.2s;
+    }
+    .back-link:hover {
+      color: #1769aa;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Create New Note</h2>
+    <form method="POST" action="/create" id="noteForm">
+    <label for="title">Title</label>
+    <input type="text" id="title" name="title" required />
+
+    <label for="content">Content</label>
+    <textarea id="content" name="content" required></textarea>
+
+    <label for="created_by">Your Name</label>
+    <input type="text" id="created_by" name="created_by" required />
+
+    <button type="submit" class="btn">Create Note</button>
+    </form>
+    <a href="/" class="back-link">← Back to All Notes</a>
+  </div>
+</body>
+</html>
+
+<script>
+  document.getElementById('noteForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const data = {
+      title: document.getElementById('title').value,
+      content: document.getElementById('content').value,
+      created_by: document.getElementById('created_by').value
+    };
+    
+    const res = await fetch('/create', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+
+    const result = await res.json();
+
+    if (res.ok && result.code === 200) {
+      alert("Tạo note thành công!");
+      window.location.href = "/";
+    } else {
+      alert(result.message || "Tạo note thất bại!");
+    }
+
+  });
+</script>

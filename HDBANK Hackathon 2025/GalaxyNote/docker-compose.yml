@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  app:
+    build: .
+    container_name: galaxy-notes-app
+    environment:
+      - DB_USER=sa
+      - DB_PASSWORD=GalaxyOne@2025
+      - DB_SERVER=10.0.2.182
+      - DB_PORT=14333
+      - DB_NAME=hackathon
+    ports:
+      - "20106:3000"
+    restart: unless-stopped

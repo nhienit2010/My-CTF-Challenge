@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>All Notes</title>
+  <style>
+    body {
+      background: #f5f7fa;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 80%;
+      margin: 40px auto 0 auto;
+      padding: 24px 32px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(33,150,243,0.08);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 24px;
+      color: #2196f3;
+    }
+    .create-link, .search-link {
+      display: block;
+      width: fit-content;
+      margin: 0 auto 18px auto;
+      padding: 8px 18px;
+      background: #2196f3;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+    .create-link:hover, .search-link:hover {
+      background: #1769aa;
+    }
+    table { 
+      border-collapse: collapse; 
+      width: 100%; 
+      margin: 0 auto;
+      background: #fafbfc;
+    }
+    th, td { 
+      border: 1px solid #ccc; 
+      padding: 10px 14px; 
+      text-align: left; 
+    }
+    th {
+      background: #2196f3;
+      color: #fff;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    tr:nth-child(even) { background: #f9f9f9; }
+    tr:hover { background: #e3f2fd; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>All Notes</h2>
+    <form method="POST" action="/search" id="searchForm" style="margin-bottom: 24px; text-align: center;">
+      <input type="text" id="search" name="search" placeholder="Search notes..." style="padding:8px 14px; width: 300px; border-radius: 5px; border:1px solid #b3c6e0;">
+      <button type="submit" style="padding:8px 18px; background:#2196f3; color:#fff; border:none; border-radius:5px; font-weight:bold; cursor:pointer;">Search</button>
+    </form>
+    <a href="/create" class="create-link">Create new note</a>
+    <table>
+      <thead>
+        <tr>
+          <th>Note ID</th>
+          <th>Title</th>
+          <th>Content</th>
+          <th>Owner</th>
+          <th>Created At</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% notes.forEach(note => { %>
+          <tr>
+            <td><%= note.note_id %></td>
+            <td><%= note.title %></td>
+            <td><%= note.content %></td>
+            <td><%= note.created_by  %></td>
+            <td><%= note.created_at %></td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+
+  </div>
+</body>
+</html>
+
+<script>
+  document.getElementById('searchForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const data = {
+      search: document.getElementById('search').value,
+      order_by: "note_id",
+      created_by: ""
+    };
+    
+    const res = await fetch('/search', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+
+    const result = await res.json();
+
+    if (res.ok && result.code === 200) {
+      document.body.innerHTML = `
+        <div class="container">
+          <h2>Search Results</h2>
+          <a href="/" class="create-link">Back to All Notes</a>
+          <table>
+            <thead>
+              <tr>
+                <th>Note ID</th>
+                <th>Title</th>
+                <th>Content</th>
+                <th>Owner</th>
+                <th>Created At</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${result.data.map(note => `
+                <tr>
+                  <td>${note.note_id}</td>
+                  <td>${note.title}</td>
+                  <td>${note.content}</td>
+                  <td>${note.created_by}</td>
+                  <td>${note.created_at}</td>
+                </tr>
+              `).join('')}
+            </tbody>
+          </table>
+        </div>
+      `;
+    } else {
+      alert(result.message || "Không thể tìm kết quả!");
+    }
+
+  });
+</script>
