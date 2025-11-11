@@ -1,0 +1,20 @@
+version: '3.5'
+services:
+  mysql:
+    image: mariadb:10.5.8
+    restart: always
+    volumes:
+      - ./db/db.sql:/docker-entrypoint-initdb.d/database.sql
+    environment:
+      - MYSQL_DATABASE=ninjashop
+      - MYSQL_ROOT_PASSWORD=Abcd@1234
+  web:
+    build: .
+    depends_on:
+      - mysql
+    ports:
+      - '20109:80'
+    stdin_open: true
+volumes:
+  db:
+    driver: local
