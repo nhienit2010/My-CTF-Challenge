@@ -1,0 +1,10 @@
+version: '3.5'
+services:
+  web:
+    build: .
+    ports:
+      - '20102:80'
+    stdin_open: true
+volumes:
+  db:
+    driver: local

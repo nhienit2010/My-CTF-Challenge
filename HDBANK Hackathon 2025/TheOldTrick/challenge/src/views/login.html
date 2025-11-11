@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      --primary: #2563eb;
+      --bg: #f8fafc;
+      --card: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .form-card {
+      background: var(--card);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    h2 {
+      margin: 0 0 1.2rem;
+      text-align: center;
+      color: #111827;
+    }
+
+    label {
+      font-size: 0.9rem;
+      color: #374151;
+      display: block;
+      margin-bottom: 0.3rem;
+    }
+
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 0.7rem 0.9rem;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+      transition: border-color 0.2s;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(37,99,235,0.2);
+    }
+
+    button {
+      width: 100%;
+      padding: 0.8rem;
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    .note {
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      text-align: center;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-card">
+    <h2>Đăng nhập</h2>
+    <form method="POST" action="login.php">
+      <label for="username">Username</label>
+      <input id="username" type="text" name="username" placeholder="Nhập username...">
+
+      <label for="quote">Quote</label>
+      <input id="quote" type="text" name="quote" placeholder="Viết một câu nói...">
+
+      <button type="submit">Submit</button>
+    </form>
+    <p class="note">Demo form đẹp &amp; gọn gàng ✨</p>
+  </div>
+</body>
+</html>
